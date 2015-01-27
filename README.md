@@ -4,7 +4,8 @@ A barebones setup used to quickly get ideas up and running.
 ## Setup
   1. Clone the repository.
   2. Update the `package.json` file to reflect the name of your project.
-  3. Delete the original remote. Create a repository if needed.
+  3. Run `npm install` to get the node modules.
+  4. Delete the original remote. Create a repository if needed.
 
 ## Launching to Heroku
   1. Create a new app: `heroku apps:create nameofyourapp`.
