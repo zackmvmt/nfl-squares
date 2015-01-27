@@ -20,7 +20,6 @@ A barebones setup used to quickly get ideas up and running.
     - Front-end JS will be linted and any errors are reported in the console.
 
 ## TODO
-  - Add in (commented out?) some Jquery, Underscore, and backbone.
   - Create an example / documentation for DB calls (if needed).
   - Add in a testing platform.
   - Create a _very_ basic stylesheet for prototypes.
