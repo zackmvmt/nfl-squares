@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
 });
 
 var server = app.listen(port, function() {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+  var serverHost = server.address().address;
+  var serverPort = server.address().port;
+  console.log('Example app listening at http://%s:%s', serverHost, serverPort);
 });
