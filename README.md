@@ -6,6 +6,12 @@ A barebones setup used to quickly get ideas up and running.
   2. Update the `package.json` file to reflect the name of your project.
   3. Delete the original remote. Create a repository if needed.
 
+## Launching to Heroku
+  1. Create a new app: `heroku apps:create nameofyourapp`.
+  2. Just in case, make sure there is one dyno set up: `heroku ps:scale web=1`.
+  3. Push it up to Heroku: `git push heroku master`.
+  4. Check it out!
+
 ## Working with Files / Local Development
   1. Run `gulp` in the directory.
   2. Thats it!
