@@ -8,7 +8,7 @@ A barebones setup used to quickly get ideas up and running.
 
 ## Launching to Heroku
   1. Create a new app: `heroku apps:create nameofyourapp`.
-  2. Just in case, make sure there is one dyno set up: `heroku ps:scale web=1`.
+  2. Just in case, make sure there is at least one dyno: `heroku ps:scale web=1`.
   3. Push it up to Heroku: `git push heroku master`.
   4. Check it out!
 
@@ -20,8 +20,8 @@ A barebones setup used to quickly get ideas up and running.
     - Front-end JS will be linted and any errors are reported in the console.
 
 ## TODO
-  - Document how to push up to heroku.
   - Create an example route / api.
+  - Add in (commented out?) some Jquery, Underscore, and backbone.
   - Create an example / documentation for DB calls (if needed).
   - Add in a testing platform.
   - Create a _very_ basic stylesheet for prototypes.
