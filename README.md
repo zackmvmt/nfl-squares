@@ -9,8 +9,8 @@ A barebones setup used to quickly get ideas up and running.
 
 ## Launching to Heroku
   1. Create a new app: `heroku apps:create nameofyourapp`.
-  2. Just in case, make sure there is at least one dyno: `heroku ps:scale web=1`.
-  3. Push it up to Heroku: `git push heroku master`.
+  2. Push it up to Heroku: `git push heroku master`.
+  3. Just in case, make sure there is at least one dyno: `heroku ps:scale web=1`.
   4. Check it out!
 
 ## Working with Files / Local Development
