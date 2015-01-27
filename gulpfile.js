@@ -34,9 +34,11 @@ gulp.task('scripts', function() {
 
 // LINT & RESTART BACK-END JS
 gulp.task('server', function() {
-  // TODO: listen for changes to server-side scripts and restart app.js
-  // THEN: test
-  // THEN: document
+  nodemon({
+    script: 'app.js',
+    ext: 'js',
+    ignore: ['public/**/*', './gulpfile.js', './node_modules/**/*']
+  });
 });
 
 // WATCH
@@ -46,4 +48,4 @@ gulp.task('watch', function() {
 });
 
 // DEFAULT
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'server', 'watch']);
