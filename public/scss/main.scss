@@ -1,1 +1,69 @@
-// Styles Go Here
+// variables / mixins
+$font1: 'Open Sans', sans-serif;
+$font2: 'Alfa Slab One', serif;
+$width: 800px;
+
+.clear {
+	clear: both;
+}
+.btn {
+	background-color: #023469;
+	color: #FFF;
+	padding: 5px 10px;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 2px 2px 0px #BBB;
+	margin-right: 20px;
+}
+
+// global styles
+body {
+	background-color: #EFEFEF;
+	padding: 0;
+	margin: 0;
+	padding: 20px 0;
+}
+.wrapper {
+	width: $width;
+	margin: auto;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	border-radius: 3px;
+}
+.content {
+	width: $width * 4;
+}
+.page {
+	width: $width - 40;
+	padding: 20px;
+	padding-top: 0;
+	float: left;
+	font-family: $font1;
+	color: #333;
+}
+h1, h2 {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+h1 {
+	font-family: $font2;
+	padding: 20px;
+	font-size: 40px;
+	padding-bottom: 0;
+}
+h2 {
+	font-family: $font1;
+	color: #BBB;
+	font-size: 35px;
+	padding-bottom: 20px;
+}
+
+// startup / settings
+
+// pregame
+
+// gametime
+
+// endgame

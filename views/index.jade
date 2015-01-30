@@ -1,6 +1,8 @@
 html
 	head
 		title NFL Squares!
+		link(href='http://fonts.googleapis.com/css?family=Alfa+Slab+One', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="dist/css/styles.css")
 	body
 		.wrapper
@@ -9,14 +11,19 @@ html
 
 				//- startup / settings
 				.page.settings
-					span settings goes here
+					h2 Set-Up
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odit laudantium illo expedita aspernatur molestias sunt placeat. Esse quam aspernatur laudantium iste dolor, eius accusamus assumenda culpa minima mollitia totam.
+					.btn.pick-squares-btn Pick Squares
 
 				//- pregame
 				.page.pregame
+					h2 Pre-Game: Pick Your Squares
 					.grid
 						.square this is a square
 					.stats
 						span stats goes here
+					.btn.settings-btn Back to Setup
+					.btn.start-game-btn Start Game
 
 				//- gametime
 				.page.gametime
@@ -28,6 +35,8 @@ html
 				//- end game (if we want)
 				.page.endgame
 					span end game information could go here
+
+				.clear
 
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		// script(src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js")
