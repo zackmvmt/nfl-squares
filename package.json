@@ -1,12 +1,12 @@
 {
-  "name": "node-simple",
+  "name": "NFL Squares",
   "version": "0.0.0",
   "description": "A simple boilerplate for \"proof of concept\" apps",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Zack Stickles",
+  "author": "Dan Mandle & Zack Stickles",
   "license": "ISC",
   "dependencies": {
     "express": "^4.11.1",
