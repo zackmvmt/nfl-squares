@@ -22,6 +22,13 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('public/dist/css'));
 });
 
+gulp.task('prod-sass', function() {
+  return gulp.src('public/scss/**/*.scss')
+    .pipe(sass({ sourceComments: 'map' }))
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('public/dist/css'));
+});
+
 // CONCAT & MINIFY FRONT-END JS
 gulp.task('scripts', function() {
   return gulp.src('public/js/**/*.js')
@@ -30,6 +37,15 @@ gulp.task('scripts', function() {
     .pipe(rename('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('public/dist/js'));
+});
+
+gulp.task('prod-scripts', function() {
+  return gulp.src('public/js/**/*.js')
+  .pipe(concat('all.js'))
+  .pipe(gulp.dest('public/dist/js'))
+  .pipe(rename('all.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('public/dist/js'));
 });
 
 // LINT & RESTART BACK-END JS
@@ -49,3 +65,6 @@ gulp.task('watch', function() {
 
 // DEFAULT
 gulp.task('default', ['lint', 'sass', 'scripts', 'server', 'watch']);
+
+// Production Task
+gulp.task('production', ['prod-sass', 'prod-scripts', 'prod-jst']);
