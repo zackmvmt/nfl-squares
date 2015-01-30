@@ -12,7 +12,28 @@ html
 				//- startup / settings
 				.page.settings
 					h2 Set-Up
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odit laudantium illo expedita aspernatur molestias sunt placeat. Esse quam aspernatur laudantium iste dolor, eius accusamus assumenda culpa minima mollitia totam.
+					.option
+						label(for="pps") Price Per Square ($X):
+						input(type="text", id="pps" class="price-per-square")
+					.option
+						h3 Players
+						ul.player-list
+							//- EXAMPLES
+							li
+								.name Zack Stickles
+								.num
+									span.num-squares 20
+									span  Squares 
+							li
+								.name Dan Mandle
+								.num
+									span.num-squares 15
+									span  Squares 
+						.btn.add-player-btn Add Player
+					.option
+						span Squares Remaining: 
+						//- EXAMPLE
+						span.squares-remaining 88
 					.btn.pick-squares-btn Pick Squares
 
 				//- pregame

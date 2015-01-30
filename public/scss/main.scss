@@ -14,6 +14,10 @@ $width: 800px;
 	cursor: pointer;
 	box-shadow: 2px 2px 0px #BBB;
 	margin-right: 20px;
+	&:hover {
+		color: #BA0820;
+		cursor: pointer;
+	}
 }
 
 // global styles
@@ -41,8 +45,13 @@ body {
 	float: left;
 	font-family: $font1;
 	color: #333;
+	font-size: 18px;
 }
-h1, h2 {
+.option {
+	border-bottom: 1px solid #CCC;
+	padding: 20px 0;
+}
+h1, h2, h3 {
 	padding: 0;
 	margin: 0;
 	font-weight: 400;
@@ -59,8 +68,47 @@ h2 {
 	font-size: 35px;
 	padding-bottom: 20px;
 }
+h3 {
+	font-size: 25px;
+	color: #777;
+}
+input {
+	outline: none !important;
+	font-size: 16px;
+	font-family: $font1;
+	padding: 5px;
+	color: #333;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
 // startup / settings
+.settings {
+	label {
+		padding-right: 20px;
+	}
+	.pick-squares-btn {
+		margin-top: 20px;
+	}
+	.add-player-btn {
+		margin-top: 20px;
+	}
+	ul.player-list {
+		margin-top: 20px;
+		li {
+			height: 30px;
+			.name, .num {
+				float: left;
+			}
+			.name {
+				margin-right: 20px;
+			}
+		}
+	}
+}
 
 // pregame
 
