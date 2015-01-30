@@ -1,5 +1,5 @@
 {
-  "name": "NFL Squares",
+  "name": "nfl-squares",
   "version": "0.0.0",
   "description": "A simple boilerplate for \"proof of concept\" apps",
   "main": "app.js",
