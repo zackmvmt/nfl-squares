@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  
+
   // EXAMPLE API
   app.get('/api/users', function(req, res) {
     var users = [
@@ -9,5 +9,7 @@ module.exports = function(app) {
     ];
     res.json(users);
   });
-  
+
+  app.get('/api/game', require('../controllers/game.js').gameData);
+
 };

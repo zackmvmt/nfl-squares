@@ -1,8 +1,8 @@
-/* line 6, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 6, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 .clear {
   clear: both; }
 
-/* line 9, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 9, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 .btn {
   background-color: #023469;
   color: #FFF;
@@ -12,14 +12,14 @@
   box-shadow: 2px 2px 0px #BBB;
   margin-right: 20px; }
 
-/* line 20, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 20, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 body {
   background-color: #EFEFEF;
   padding: 0;
   margin: 0;
   padding: 20px 0; }
 
-/* line 26, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 26, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 .wrapper {
   width: 800px;
   margin: auto;
@@ -28,11 +28,11 @@ body {
   overflow: hidden;
   border-radius: 3px; }
 
-/* line 34, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 34, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 .content {
   width: 3200px; }
 
-/* line 37, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 37, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 .page {
   width: 760px;
   padding: 20px;
@@ -41,20 +41,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #333; }
 
-/* line 45, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 45, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 h1, h2 {
   padding: 0;
   margin: 0;
   font-weight: 400; }
 
-/* line 50, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 50, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 h1 {
   font-family: 'Alfa Slab One', serif;
   padding: 20px;
   font-size: 40px;
   padding-bottom: 0; }
 
-/* line 56, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+/* line 56, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: #BBB;
