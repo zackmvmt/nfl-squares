@@ -14,9 +14,13 @@ $(function() {
 	$('.start-game-btn').on('click', nextPage);
 	$('.settings-btn').on('click', prevPage);
 
-	fetchGameData();
-
+	// setUpdateInterval();
 });
+
+var updateInterval = null;
+function setUpdateInterval(){
+	updateInterval = setInterval(fetchGameData, (1000*60)*5); // every 5 mins, update
+}
 
 var gameData = {};
 
@@ -28,8 +32,12 @@ function fetchGameData(){
 		type: 'GET',
 
 	}).done(function(data){
-		console.log(data);
+		// console.log(data);
+		gameData = data;
 	}).error(function(err){
-		console.error(err);
-	})
+		// console.error(err);
+		if(err.status === 503){
+			console.log("Game doesn't exist yet on NFL servers");
+		}
+	});
 }
