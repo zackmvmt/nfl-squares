@@ -4,18 +4,39 @@ $(function() {
   //   console.log('users', data);
   // });
 
+	loadLocalStorage();
+
 	nextPage = function() {
 		$('.content').animate({ 'margin-left': '-=800' }, 500);
 	};
 	prevPage = function() {
 		$('.content').animate({ 'margin-left': '+=800' }, 500);
 	};
+
+	/////// EVENTS
+	// Nav
 	$('.pick-squares-btn').on('click', nextPage);
 	$('.start-game-btn').on('click', nextPage);
 	$('.settings-btn').on('click', prevPage);
+	// Settings
+	$('.pps').on('change', function(e){
+		info.config.costPerSq = $(e.currentTarget).val();
+	});
+
+
 
 	// setUpdateInterval();
+	window.onbeforeunload = beforeUnload;
 });
+
+var info = {
+	players: [],
+	squares: {},
+	config: {
+		costPerSq: 0,
+		locked: false
+	}
+};
 
 var updateInterval = null;
 function setUpdateInterval(){
@@ -23,6 +44,18 @@ function setUpdateInterval(){
 }
 
 var gameData = {};
+
+function beforeUnload() {
+	// saveLocalStorage();
+
+
+
+	return null; // any non-void return will create an alert to the user
+}
+
+function loadLocalStorage(){
+
+}
 
 function fetchGameData(){
 
