@@ -12,6 +12,20 @@ $(function() {
 	prevPage = function() {
 		$('.content').animate({ 'margin-left': '+=800' }, 500);
 	};
+	
+	// FOR TESTING, PLEASE REMOVE
+	for (var i = 0; i < 100; i++) {
+		var dom = '';
+		if (i === 24) {
+			dom += '<div class="square chosen">';
+			dom += '<div class="square-text">Zack S.</div>';
+		} else {
+			dom += '<div class="square">';
+			dom += '<div class="square-text">' + i + '</div>';
+		}
+		dom += '</div>';
+		$('.square-container').append(dom);
+	}
 
 	/////// EVENTS
 	// Nav

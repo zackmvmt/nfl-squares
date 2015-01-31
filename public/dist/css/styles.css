@@ -1,8 +1,8 @@
-/* line 6, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 6, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .clear {
   clear: both; }
 
-/* line 9, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 9, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .btn {
   background-color: #023469;
   color: #FFF;
@@ -11,19 +11,19 @@
   cursor: pointer;
   box-shadow: 2px 2px 0px #BBB;
   margin-right: 20px; }
-  /* line 17, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+  /* line 17, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
   .btn:hover {
     color: #BA0820;
     cursor: pointer; }
 
-/* line 24, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 24, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 body {
   background-color: #EFEFEF;
   padding: 0;
   margin: 0;
   padding: 20px 0; }
 
-/* line 30, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 30, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .wrapper {
   width: 800px;
   margin: auto;
@@ -32,11 +32,12 @@ body {
   overflow: hidden;
   border-radius: 3px; }
 
-/* line 38, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 38, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .content {
-  width: 3200px; }
+  width: 3200px;
+  margin-left: -800px; }
 
-/* line 43, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 43, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .page {
   width: 760px;
   padding: 20px;
@@ -46,37 +47,37 @@ body {
   color: #333;
   font-size: 18px; }
 
-/* line 52, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 52, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .option {
   border-bottom: 1px solid #CCC;
   padding: 20px 0; }
 
-/* line 56, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 56, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 h1, h2, h3 {
   padding: 0;
   margin: 0;
   font-weight: 400; }
 
-/* line 61, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 61, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 h1 {
   font-family: 'Alfa Slab One', serif;
   padding: 20px;
   font-size: 40px;
   padding-bottom: 0; }
 
-/* line 67, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 67, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: #BBB;
   font-size: 35px;
   padding-bottom: 20px; }
 
-/* line 73, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 73, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 h3 {
   font-size: 25px;
   color: #777; }
 
-/* line 77, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 77, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 input {
   outline: none !important;
   font-size: 16px;
@@ -84,13 +85,13 @@ input {
   padding: 5px;
   color: #333; }
 
-/* line 84, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 84, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-/* line 91, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 91, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .grid {
   width: 700px;
   height: 700px;
@@ -98,59 +99,84 @@ ul {
   margin-top: 30px;
   margin-left: 30px;
   position: relative; }
-  /* line 98, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+  /* line 98, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
   .grid .top-line, .grid .left-line {
     position: absolute; }
-    /* line 100, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+    /* line 100, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
     .grid .top-line .key, .grid .left-line .key {
       text-align: center;
       background-color: #CCC; }
-  /* line 105, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+  /* line 105, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
   .grid .top-line {
     top: -30px;
     left: 0;
     width: 700px;
     height: 30px; }
-    /* line 110, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+    /* line 110, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
     .grid .top-line .key {
       float: left;
       width: 10%;
       height: 100%;
       line-height: 28px; }
-  /* line 117, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+  /* line 117, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
   .grid .left-line {
     top: 0;
     left: -30px;
     width: 30px;
     height: 700px; }
-    /* line 122, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+    /* line 122, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
     .grid .left-line .key {
       height: 10%;
       line-height: 75px; }
+  /* line 127, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
+  .grid .square {
+    width: 70px;
+    height: 70px;
+    background-color: #EEE;
+    float: left;
+    display: table;
+    transition: all 0.3s;
+    color: #CCC; }
+    /* line 135, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
+    .grid .square .square-text {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle; }
+    /* line 140, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
+    .grid .square:hover {
+      color: #333;
+      cursor: pointer; }
+      /* line 143, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
+      .grid .square:hover .square-text {
+        background-color: #CCC; }
+    /* line 147, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
+    .grid .square.chosen {
+      background-color: #023469;
+      color: #FFF; }
 
-/* line 131, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 156, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .settings label {
   padding-right: 20px; }
-/* line 134, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 159, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .settings .pick-squares-btn {
   margin-top: 20px; }
-/* line 137, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 162, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .settings .add-player-btn {
   margin-top: 20px; }
-/* line 140, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 165, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .settings ul.player-list {
   margin-top: 20px; }
-  /* line 142, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+  /* line 167, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
   .settings ul.player-list li {
     height: 30px; }
-    /* line 144, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+    /* line 169, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
     .settings ul.player-list li .name, .settings ul.player-list li .num {
       float: left; }
-    /* line 147, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+    /* line 172, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
     .settings ul.player-list li .name {
       margin-right: 20px; }
 
-/* line 156, /Users/danmandle/Sites/nfl-squares/public/scss/main.scss */
+/* line 181, /home/zackmvmt/Web/apps/nfl-squares/public/scss/main.scss */
 .pregame .start-game-btn {
   margin-top: 20px; }
 

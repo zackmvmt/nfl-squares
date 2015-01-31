@@ -38,7 +38,7 @@ body {
 .content {
 	width: $width * 4;
 	// TODO: remove this
-	// margin-left: -800px;
+	margin-left: -800px;
 }
 .page {
 	width: $width - 40;
@@ -122,6 +122,31 @@ ul {
 		.key {
 			height: 10%;
 			line-height: 75px;
+		}
+	}
+	.square {
+		width: 70px;
+		height: 70px;
+		background-color: #EEE;
+		float: left;
+		display: table;
+		transition: all 0.3s;
+		color: #CCC;
+		.square-text {
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		&:hover {
+			color: #333;
+			cursor: pointer;
+			.square-text {
+				background-color: #CCC;
+			}
+		}
+		&.chosen {
+			background-color: #023469;
+			color: #FFF;
 		}
 	}
 }
