@@ -19,31 +19,44 @@ html
 						h3 Players
 						ul.player-list
 							//- EXAMPLES
-							li
-								input(class="name" value="Zack Stickles")
+							li.blank
+								input(class="name" value="")
 								.num
-									input(class="num-squares" value=20 type="number")
-									span  Squares
-							li
-								input(class="name" value="Clay Branch")
-								.num
-									input(class="num-squares" value=20 type="number")
-									span  Squares
-							li
-								.name Dan Mandle
-								.num
-									span.num-squares 15
+									input(class="num-squares" value=0 type="number")
 									span  Squares
 						.btn.add-player-btn Add Player
 					.option
 						span Squares Remaining:
 						//- EXAMPLE
 						span.squares-remaining 88
+					.option
+						h3 Payouts
+						ul.payouts
+							li Q1:
+								span
+							li Halftime:
+								span
+							li Q3:
+								span
+							li Final:
+								span
 					.btn.pick-squares-btn Pick Squares
 
 				//- pregame
 				.page.pregame
 					h2 Pre-Game: Pick Your Squares
+					.grid
+						.square-container
+					.stats
+						.option
+							span player to choose from (click to select active chooser)
+					.btn.settings-btn Back to Setup
+					.btn.start-game-btn Start Game
+
+				//- gametime
+				.page.gametime
+					h2 Game Time!
+					span Copy grid over...dan does fancy logic
 					.grid
 						.top-line
 							.key 0
@@ -68,16 +81,6 @@ html
 							.key 8
 							.key 9
 						.square-container
-					.stats
-						.option
-							span player to choose from (click to select active chooser)
-					.btn.settings-btn Back to Setup
-					.btn.start-game-btn Start Game
-
-				//- gametime
-				.page.gametime
-					h2 Game Time!
-					span Copy grid over...dan does fancy logic
 
 				//- end game (if we want)
 				.page.endgame

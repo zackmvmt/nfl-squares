@@ -19,14 +19,16 @@ $(function() {
 	$('.start-game-btn').on('click', nextPage);
 	$('.settings-btn').on('click', prevPage);
 	// Settings
-	$('.pps').on('change', function(e){
-		info.config.costPerSq = $(e.currentTarget).val();
-	});
-
+	$('#pps').on('change', updatePrice);
+	// $('.pps').on('change', console.log);
+	$('.option .player-list').on('change', 'li .num input', updateSquareCount);
+	$('.add-player-btn').on('click', addPlayer);
+	$('.option .player-list').on('change', 'li input', updatePlayerInfo);
 
 
 	// setUpdateInterval();
 	window.onbeforeunload = beforeUnload;
+	loadLocalStorage();
 });
 
 var info = {
@@ -53,8 +55,73 @@ function beforeUnload() {
 	return null; // any non-void return will create an alert to the user
 }
 
+function updatePlayerInfo(){
+	// this is dirty
+	$('.player-list li').each(function(index, el){
+		$el = $(el);
+		var name = $el.find('.name').val();
+		var sqCount = $el.find('.num-squares').val();
+
+		if(name && sqCount){
+			info.players[index] = {
+				name: name,
+				sqCount: sqCount
+			}
+		}
+	});
+
+}
+
+function addPlayer(event, playerDetails){
+	var html = "<li><input class='name'><div class='num'><input class='num-squares' type='number'><span> Squares</span></div></li>"
+
+	var $player = $(html);
+
+	if(playerDetails){
+		console.log('has details');
+		$player.find('.name').val(playerDetails.name);
+		$player.find('.num-squares').val(playerDetails.sqCount);
+		$player.insertBefore('.player-list li.blank');
+	}
+	else {
+		console.log('no details');
+		$player.appendTo('.player-list');
+	}
+}
+
+function updateSquareCount(){
+	updatePlayerInfo();
+	var sqDibbed = 0;
+	$('.num input').each(function(index, el){
+		sqDibbed += parseInt($(el).val());
+	});
+
+	$('.squares-remaining').text((100-sqDibbed));
+
+	updatePayouts();
+}
+
+function updatePrice(e){
+	console.log('in here');
+	info.config.costPerSq = $(e.currentTarget).val();
+	updatePayouts();
+}
+
+function updatePayouts(){
+	var poolTotal = info.config.costPerSq * (100 - $('.squares-remaining').text());
+
+	var payoutPercents = [0.15, 0.30, 0.15, 0.40];
+
+	$('.payouts li span').each(function(index, spanEl){
+		var payout = poolTotal * payoutPercents[index];
+		payout = Math.round(payout * 100) / 100;
+		$(spanEl).text('$' + payout);
+	});
+}
+
 function loadLocalStorage(){
 
+	// $('li.blank').removeClass('blank');
 }
 
 function fetchGameData(){
