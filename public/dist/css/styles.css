@@ -34,8 +34,7 @@ body {
 
 /* line 38, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
 .content {
-  width: 3200px;
-  margin-left: -800px; }
+  width: 3200px; }
 
 /* line 43, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
 .page {
@@ -150,4 +149,8 @@ ul {
     /* line 147, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
     .settings ul.player-list li .name {
       margin-right: 20px; }
+
+/* line 156, /Users/zackstickles/Sites/personal/nfl-squares/public/scss/main.scss */
+.pregame .start-game-btn {
+  margin-top: 20px; }
 
