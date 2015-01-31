@@ -14,24 +14,29 @@ html
 					h2 Set-Up
 					.option
 						label(for="pps") Price Per Square ($X):
-						input(type="text", id="pps" class="price-per-square")
+						input(type="number", id="pps" class="price-per-square" step="0.1")
 					.option
 						h3 Players
 						ul.player-list
 							//- EXAMPLES
 							li
-								.name Zack Stickles
+								input(class="name" value="Zack Stickles")
 								.num
-									span.num-squares 20
-									span  Squares 
+									input(class="num-squares" value=20 type="number")
+									span  Squares
+							li
+								input(class="name" value="Clay Branch")
+								.num
+									input(class="num-squares" value=20 type="number")
+									span  Squares
 							li
 								.name Dan Mandle
 								.num
 									span.num-squares 15
-									span  Squares 
+									span  Squares
 						.btn.add-player-btn Add Player
 					.option
-						span Squares Remaining: 
+						span Squares Remaining:
 						//- EXAMPLE
 						span.squares-remaining 88
 					.btn.pick-squares-btn Pick Squares
